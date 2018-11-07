@@ -89,21 +89,17 @@ int main()
 		exit(EXIT_FAILURE);
 	}
 	Instruction* ptr=head;
+
 	/* YOUR CODE GOES HERE */
 
 
 	//Optimize the first time
 	head=optim(ptr);
 	
-	
-	
-	//printf("second time\n");
-	//head=opti(ptr);
 
-//	if(head){
 		PrintInstructionList(stdout, head);
 		DestroyInstructionList(head);
-//	}
+
 	return EXIT_SUCCESS;
 }
 
